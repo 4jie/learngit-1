@@ -1,0 +1,14 @@
+git checkout -b dev//加上-b参数表示创建并切换
+//相当于以下两条指令
+git branch dev //创建分支
+git checkout dev//切换分支
+
+git branch //查看当前分支
+
+git merge dev//git merge命令用于合并指定分支到当前分支
+
+//因为切换分支的git checkout <branch>和删除文件的git checkout -- <file>有点迷惑，所以新版的git提供了新的git switch来切换
+git switch -c dev//创建并切换到dev分支
+git switch master//直接切换到master
+
+git branch -d dev //删除dev分支
